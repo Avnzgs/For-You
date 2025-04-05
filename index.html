@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Halaman yang memberikan semangat untuk kamu!" />
+  <title>Semangat Untuk Kamu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Musik -->
+  <audio id="bgMusic" loop>
+    <source src="musik.mp3" type="audio/mpeg" />
+    Browser kamu tidak mendukung audio!
+  </audio>
+
+  <div class="container">
+    <h1>Semangat, Kamu Bisa!</h1>
+    <p class="message" id="message">Kamu sudah luar biasa!</p>
+    <button class="btn" onclick="giveEncouragement()">Dapatkan Pesan Semangat</button>
+    <button class="btn" onclick="showSecretMessage()">Lihat Pesan Rahasia 💌</button>
+    <button class="btn" onclick="playMusic()">🎵 Nyalakan Musik</button>
+  </div>
+
+  <!-- Popup pesan rahasia -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <p>
+        Hei, kamu itu luar biasa. Jangan pernah ragu sama dirimu sendiri ya.
+        Aku percaya kamu bisa melalui semuanya. Semangat terus Anyy!
+      </p>
+    </div>
+  </div>
+
+  <!-- Love (hati) animation -->
+  <div id="hearts-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
